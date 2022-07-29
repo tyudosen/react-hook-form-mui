@@ -24,6 +24,8 @@ export default function FormContainer<TFieldValues extends FieldValues = FieldVa
     const { handleSubmit, reset } = methods
 
     const submitAndClear: SubmitHandler<TFieldValues> = (data) => {
+      console.log('!!!!!');
+      
       onSuccess!(data)
       return reset();
     };

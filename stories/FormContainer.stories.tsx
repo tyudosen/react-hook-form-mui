@@ -32,7 +32,8 @@ export const Basic = () => (
     defaultValues={{
       name: ''
     }}
-    onSuccess={action('submit')}
+    onSuccess={(data) => {console.log('subbed', data)}
+    }
   >
     <TextFieldElement name={'name'} label={'Name'} required /> <br />
     <TextFieldElement name={'email'} label={'Email'} required type={'email'} /> <br />
